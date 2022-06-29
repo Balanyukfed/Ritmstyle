@@ -1,0 +1,51 @@
+.format	{
+	height: 620px;
+	margin-top: 90px;
+}
+.format_cont{
+	margin-top: 60px;
+	height: 501px;
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	justify-content: space-between;
+}
+.format_text{
+	display: block;
+	float: left;
+	color: #fff;
+	width: 526px;
+}
+.button_fake{
+	width: 96px;
+	height: 30px;
+	background: #018ABE;
+	font-family: 'Proxima Nova Rg';
+	font-weight: bold;
+	font-style: normal;
+	font-size: 14px;
+	line-height: 30px;
+	text-align: center;
+	border-radius: 5px;
+}
+.format_text_header{
+	font-family: 'El Messiri';
+	font-weight: bold;
+	font-style: normal;
+	font-size: 24px;
+	line-height: 140%;
+	text-align: left;
+	margin-top: 45px;
+}
+.format_text_info{
+	margin-top: 30px;
+	font-family: 'Proxima Nova Lt';
+	font-weight: 300;
+	font-style: normal;
+	line-height: 140%;
+	font-size: 16px;
+	opacity: 0.7;
+}
+.format_text_info br{
+	line-height: 16px;
+}
