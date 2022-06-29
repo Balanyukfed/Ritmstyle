@@ -1,0 +1,672 @@
+	* {
+		padding: 0;
+		margin: 0;
+		border: 0;
+	}
+	*,*:before,*:after{
+		-moz-box-sizing:  border-box;
+		-webkit-box-sizing:  border-box;
+		-box-sizing:  border-box;
+	}
+	:focus,:active{outline: none;}
+	a:focus,a:active{outline: none;}
+
+	nav,footer,header,aside{display: block;}
+
+	html, body{
+		height: 100%;
+		width: 100%;
+		font-size: 100%;
+		line-height: 1;
+		font-style: 14px;
+		-ms-text-size-adjust: 100%;
+		-moz-text-size-adjust: 100%;
+		-webkit-text-size-adjust: 100%;
+	}
+
+	input, button, textarea{font-family: inherit;}
+
+	input::-ms-clear{display: none;}
+	button{cursor: pointer;}
+	button::-moz-focus-inner{padding: 0;border: 0;}
+	a, a:visited{text-decoration: none;}
+	a:hover{text-decoration: none;}
+	ul li{list-style: none;}
+	img{vertical-align: top;}
+
+	h1,h2,h3,h4,h5,h6{font-size: inherit;font-weight: 400;}	
+
+	body {
+		background: rgba(22, 40, 49, 1);
+		height: 100%;
+		line-height: 1;
+		color: #fff;
+	}
+	.wrapper {
+		min-height: 100%;
+		overflow: hidden;
+		font-size: 14px;
+	}
+	.page{
+		max-width: 1736px;
+		margin: 0px auto;
+	}
+	.container {
+		max-width: 1296px;
+		margin: 0px auto;
+	}
+	img{
+		border-radius: 13px;
+	}
+	/*============================ШАПКА========================================*/
+	header{
+		width: 100%;
+	}
+	.menu .menu_list .menu_link:hover{
+		background: rgba(1, 138, 190, 1);
+	}
+	.menu .menu_list .menu_link.active{
+		background: rgba(1, 138, 190, 1);
+	}
+	.header_container{
+		height: 60px;
+		margin: 30px auto;
+		display: flex;
+		align-items: center;
+		justify-content: space-between;
+	}
+	.logo_w{
+		position: relative;
+		left: -50px;
+		top: 12px;
+	}
+	.menu{
+		left: -34px;
+		position: relative;
+		width: 655px;
+	}
+	.menu_list{
+		display: flex;
+		justify-content: space-between;
+	}
+	.menu_link{
+		color: #fff;
+		font-size: 14;
+		font-family: 'Proxima Nova Rg';
+		font-weight: normal;
+		font-style: normal;
+		height: 30px;
+		line-height: 30px;
+		background: rgba(1, 138, 190, 0);
+		padding: 0px 10px;
+		border-radius: 6px;
+		transition: all .6s ease;
+	}
+
+	.button {
+		display: flex;
+		flex-direction: row;
+		justify-content: center;
+		align-items: center;
+		width: 155px;
+		height: 36px;
+		top: 43px;
+		border-radius: 6px;
+		padding: 9px 15px;
+		background: #018ABE;
+		font-family: 'Proxima Nova Lt';
+		font-weight: 600;
+		font-style: normal;
+		font-size: 13px;
+		color: #fff;
+		transition: all .6s ease;
+	}
+	.button:hover{
+		color: #018ABE;
+		background: #fff;
+	}
+	/*======================Тело=================================*/
+	.first-screen{
+		margin-top: 20px;
+		position: relative;
+		display: block;
+		align-items: center;
+		justify-content: center;
+	}
+	img.hello_img{
+		border: 0px;
+		border-radius: 13px;
+	}
+	.first{
+		position: absolute;
+		font-family: 'El Messiri';
+		font-weight: bold;
+		font-style: normal;
+		font-size: 24px;
+		left: 528px;
+		top: 136px;
+		line-height: 140%;
+	}
+	.rectangle:before{
+		content: '';
+		background: #018ABE;
+		border-radius: 0px 50px;
+		width: 28px;
+		height: 14px;
+		display: inline-block;
+		margin: 0px 45px 5px -45px;
+	}
+	.rectangle:after{
+		content: '';
+		background: #018ABE;
+		border-radius: 0px 50px;
+		transform: matrix(-1, 0, 0, 1, 0, 0);
+		width: 28px;
+		height: 14px;
+		display: inline-block;
+		margin: 0px -45px 5px 45px;
+	}
+	.first.rectangle:before{
+		content: '';
+		background: #fff;
+		border-radius: 0px 50px;
+		height: 14px;
+		display: inline-block;
+		margin: 0px 66px 0px -94px;
+	}
+	.first.rectangle:after{
+		content: '';
+		background: #fff;
+		border-radius: 0px 50px;
+		transform: matrix(-1, 0, 0, 1, 0, 0);
+		height: 14px;
+		display: inline-block;
+		margin: 0px 0px 0px 66px;
+	}
+	.aqua{
+		position: absolute;
+		font-family: 'El Messiri';
+		font-weight: bold;
+		font-style: normal;
+		font-size: 64px;
+		left: 354px;
+		top: 210px;
+		width: 587px;
+	}
+	.aqua p {
+		text-align: center;
+		word-wrap: break-word;
+		line-height: 140%;
+	}
+	/*==============================СЕАНСЫ=======================*/
+	.services {
+		width: 1296px;
+		height: 699px;
+		margin-top: 150px;
+	}
+	.heading_text {
+		font-family: 'El Messiri';
+		font-weight: bold;
+		font-style: normal;
+		font-size: 42px;
+		line-height: 140%;
+		text-align: center;
+	}
+	.services_blocks {
+		display: flex;
+		margin-top: 100px;
+	}
+	.services_block:not(:nth-child(2n)) {
+		margin-right: 24px;
+	}
+	.services_block:not(:nth-child(-n+2)) {
+		margin-top: 24px;
+	}
+	.services_block img{
+		border-radius: 13px;
+		filter: grayscale(65%);
+		-webkit-filter: grayscale(65%);
+		transition: all 0.5s ease 0s;
+	}
+	.services_block{
+		position: relative;
+		display: block;
+		color: #fff;
+	}
+	.services_block_small{
+		display: flex;
+		flex-wrap: wrap;
+	}
+	.services_block>p{
+		position: absolute;
+		font-family: 'El Messiri';
+		font-weight: bold;
+		font-style: normal;
+		font-size: 24px;
+		line-height: 140%;
+		text-align: center;
+		top: 456px;
+		left: 50px;
+	}
+	.small>p{
+		top: auto;
+		bottom: 30px;
+		left: 40px;
+		word-wrap: break-word;
+		width: 336px;
+		text-align: left;
+	}
+	._border{
+		background-color: #018ABE;
+		width: 416px;
+		height: 13px;
+		position: absolute;
+		border-radius: 0px 0px 13px 13px;
+		opacity: 0%;
+		transition: all 1s ease 0s;
+		margin-top: -13px;
+	}
+	.services_block:hover ._border{
+		opacity: 100%;
+	}
+
+	.services_block:hover img{
+		filter: grayscale(0%);
+		-webkit-filter: grayscale(0%);
+	}
+
+	/*=================СЛАЙДЕР===============================*/
+	.reviews{
+		margin-top: 150px;
+		max-width: 1736px;
+		height: 585px;
+		overflow: hidden;
+	}
+	.slider{
+		margin: 100px 0px 0px 0px;
+		width: 100%;
+		height: 426px;
+		overflow: hidden;;
+		position: relative;
+	}
+	.slider_inner{
+		height: 350px;
+		display: flex;
+		align-items: center;
+	}
+	.slides {
+		width: 133%;
+		transition: all 1s ease;
+		display: flex;
+
+	}
+	.slider_review{
+		width: 500px;
+		height: 276px;
+		background: #018ABE;
+		border-radius: 10px;
+		opacity: 0.5;
+		transition: all 1s ease;
+		float: left;
+	}
+	.review {
+		margin-right: 50px;
+	}
+	.slider_text{
+		width: 410px;
+		margin: 40px auto;
+		font-family: 'Proxima Nova Lt';
+		font-weight: 300;
+		font-style: normal;
+		font-size: 10px;
+		transition: all 1s ease;
+	}
+	.slider_header{
+		font-family: 'Proxima Nova Rg';
+		font-weight: bold;
+		font-style: normal;
+		font-size: 16px;
+		margin-bottom: 15px;
+		transition: all 1s ease;
+	}
+	.slider_main{
+		transition: all 1s;
+		line-height: 140%;
+	}
+	.slider input{
+		display: none;
+	}
+	.btn{
+		width: 124px;
+		height: 16px;
+		display: flex;
+		justify-content: space-between;
+		margin: 0 auto;
+		bottom: 0px;
+		position: absolute;
+		left: 50%;
+		transform: translate(-50%);
+	}
+	.btn label{
+		width: 16px;
+		height: 16px;
+		background: #fff;
+		opacity: 0.4;
+		border-radius: 3px;
+		cursor: pointer;
+	}
+	#btn1:checked~.btn label[for="btn1"] {
+		opacity: 1;
+	}
+	#btn2:checked~.btn label[for="btn2"] {
+		opacity: 1;
+	}
+	#btn3:checked~.btn label[for="btn3"] {
+		opacity: 1;
+	}
+	#btn4:checked~.btn label[for="btn4"] {
+		opacity: 1;
+	}
+
+
+	#btn1:checked~.slider_inner .slides {
+		transform: translate(23.9%);
+		align-items: center;
+	}
+	#btn1:checked~.slider_inner .slides .slider_review:nth-child(1){
+		opacity: 1;
+		height: 350px;
+		width: 636px;
+	}
+	#btn1:checked~ div div div .slider_text.text_block1{
+		width: 516px;
+	}
+	#btn1:checked~ div div div div .slider_header.header1{
+		font-size: 20px;
+		margin-bottom: 20px;
+	}
+	#btn1:checked~ div div div div .slider_main.text1 {
+		font-size: 14px;
+	}
+	#btn2:checked~.slider_inner .slides {
+		transform: translate(0);
+		align-items: center;
+	}
+	#btn2:checked~.slider_inner .slides .slider_review:nth-child(2){
+		opacity: 1;
+		height: 350px;
+		width: 636px;
+	}
+	#btn2:checked~ div div div .text_block2{
+		width: 516px;
+	}
+	#btn2:checked~ div div div div .slider_header.header2{
+		font-size: 20px;
+		margin-bottom: 20px;
+	}
+	#btn2:checked~ div div div div .slider_main.text2 {
+		font-size: 14px;
+	}
+	#btn3:checked~.slider_inner .slides {
+		transform: translate(-24.1%);
+		align-items: center;
+	}
+	#btn3:checked~.slider_inner .slides .slider_review:nth-child(3){
+		opacity: 1;
+		height: 350px;
+		width: 636px;
+	}
+	#btn3:checked~ div div div .slider_text.text_block3{
+		width: 516px;
+	}
+	#btn3:checked~ div div div div .slider_header.header3{
+		font-size: 20px;
+		margin-bottom: 20px;
+	}
+	#btn3:checked~ div div div div .slider_main.text3 {
+		font-size: 14px;
+	}
+	#btn4:checked~.slider_inner .slides {
+		transform: translate(-48.1%);
+		align-items: center;
+	}
+	#btn4:checked~.slider_inner .slides .slider_review:nth-child(4){
+		opacity: 1;
+		height: 350px;
+		width: 636px;
+	}
+	#btn4:checked~ div div div .slider_text.text_block4{
+		width: 516px;
+	}
+	#btn4:checked~ div div div div .slider_header.header4{
+		font-size: 20px;
+		margin-bottom: 20px;
+	}
+	#btn4:checked~ div div div div .slider_main.text4 {
+		font-size: 14px;
+	}
+	/*====================ABOUT========================*/
+	.about {
+		width: 1076px;
+		height: 1024px;
+		margin: 150px auto 0px;
+	}
+	.about_main {
+		margin-top: 100px;
+		display: flex;
+		flex-direction: column;
+	}
+	.about_block {
+		margin-bottom: 100px;
+		display: inline-flex;
+		justify-content: space-between;
+		align-items: center;
+	}
+	.about_text {
+		display: flex;
+		flex-direction: column;
+	}
+	.about_text_header {
+		font-family: 'Proxima Nova Rg';
+		font-weight: bold;
+		font-style: normal;
+		margin-bottom: 20px;
+		line-height: 140%;
+		font-size: 24px;
+	}
+	.about_text_info {
+		font-family: 'Proxima Nova Lt';
+		font-weight: 300;
+		font-style: normal;
+		line-height: 140%;
+		font-size: 16px;
+		width: 466px;
+		opacity: 0.8;
+	}
+	.about_text_info:not(:last-child){
+		margin-bottom: 16px;
+	}
+	/*===================ЦЕНА=====================================*/
+	.price{
+		width: 1076px;
+		height: 614px;
+		margin: 150px auto 0;
+	}
+	.price .about_block {
+		margin: 100px auto 0px;
+		width: 100%;
+		height: 455px;
+		position: relative;
+	}
+	.price .about_text{
+		width: 416px;
+		display: inline-flex;
+		justify-content: space-between;
+		align-items: center;
+		flex-direction: row;
+	}
+	.list{
+		float: left;
+	}
+	.list ul{
+		width: 268px;
+	}
+	.list_price ul{
+		width: 87px;
+	}
+	.list_price {
+		float: right;
+		width: 87px;
+	}
+	.price li{
+		list-style: none;
+		font-style: normal;
+		font-size: 18px;
+		line-height: 140%;
+		padding-left: 38px;
+	}
+	.price li:not(:last-child){
+		margin-bottom: 31px;
+	}
+	.list li{
+		background: url("../img/RectangleList.svg") no-repeat 0 ;
+		font-family: 'Proxima Nova Rg';
+		font-weight: normal;
+	}
+	.list_price li{
+		font-family: 'El Messiri';
+		font-weight: bold;
+	}
+	.price img{
+		height: 396px;
+		width: 526px;
+		position: absolute;
+		top: 0;
+		right: 0;
+	}
+	.price .img_desc{
+		position: absolute;
+		bottom: 0;
+		right: 142px;
+		font-family: 'El Messiri';
+		font-weight: bold;
+		font-size: 21px;
+		line-height: 140%;
+	}
+	/*==========================КОНТАКТЫ===========================*/
+	.contacts{
+		margin-top: 150px;
+		width: 100%;
+		height: 604px;
+		display: flex;
+		justify-content: space-between;
+	}
+	.map iframe{
+		-moz-border-radius: 13px; /* Firefox */
+		-webkit-border-radius: 13px; /* Safari, Chrome */
+		-khtml-border-radius: 13px; /* KHTML */
+		border-radius: 13px; /* CSS3 */
+	}
+	.visits{
+		display: flex;
+		flex-direction: column;
+	}
+	.visit{
+		width: 392px;
+		height: 290px;
+		background: #018ABE;
+		border-radius: 13px;
+	}
+	.visit:first-child{
+		margin-bottom: 24px;
+	}
+	.visit_text{
+		width: 302px;
+		height: 220px;
+		text-align: left;
+		margin: 35px 45px;
+	}
+	.visit p:first-child{
+		font-family: 'El Messiri';
+		font-weight: bold;
+		font-size: 24px;
+		line-height: 140%;
+	}
+	.visit p:not(:first-child){
+		padding-left: 40px;
+		line-height: 135%;
+		font-family: 'Proxima Nova Rg';
+		font-weight: normal;
+		font-style: normal;
+		font-size: 14px;
+	}
+	.visit p:not(:last-child){
+		margin-bottom: 21px;
+	}
+	.visit_text>p:nth-child(2){
+		background: url("../img/point.svg") no-repeat 0;
+	}
+	.visit_text>p:nth-child(3){
+		background: url("../img/geo.svg") no-repeat 0;
+	}
+	.visit_text>p:nth-child(4){
+		background: url("../img/data.svg") no-repeat 0;
+	}
+	.footer_btn{
+		padding-top:10px;
+	}
+	.footer_button{
+		border: 1px solid rgba(255, 255, 255, 0);
+		color: #018ABE;
+		background: #fff;
+		transition: all 1s ease;
+		width: 160px;
+	}
+	.footer_button:hover{
+		border: 1px solid #fff;
+		background: #018ABE;
+		color: #fff;
+		width: 180px;
+		transition: all 1s ease;
+		letter-spacing: 1px;
+	}
+
+	/*======================FOOTER=============================*/
+	footer{
+		margin: 90px 0px 30px;
+		width: 100%;
+		height: 19px;
+		display: flex;
+		justify-content: space-between;
+	}
+	footer>p{
+		font-family: 'Proxima Nova Rg';
+		font-weight: regular;
+		font-style: normal;
+		line-height: 135%;
+		font-size: 14px;
+	}
+	#toTop {
+	border-radius: 6px;
+	text-align:center;
+	position:fixed;
+	bottom:20px; 
+	right:20px;
+	cursor:pointer;
+	display:none;
+	color:white;
+		width: 96px;
+	height: 40px;
+	background: #018ABE;
+	font-family: 'Proxima Nova Rg';
+	font-weight: bold;
+	font-style: normal;
+	font-size: 15px;
+	line-height: 40px;
+
+}
+#toTop:hover{
+	background-color: #fff;
+	color: #018ABE;
+			transition: all 1s ease;
+}
